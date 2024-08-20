@@ -1,10 +1,10 @@
 #' Create Rosé Pine .rstheme file
 #'
-#' @param variant A string - A string defining the theme palette variant to use
-#' [Rosé Pine Variants](https://rosepinetheme.com/palette/)
-#' @param install A Boolean - generate and install/apply the .rstheme file
-#' (TRUE), or just save the .rstheme file without installing/applying (FALSE)
-#' @param as_sass A Boolean - save theme as .sass file and do not apply (TRUE),
+#' @param variant A string - A string defining the theme palette variant to use;
+#' see [Rosé Pine Variants](https://rosepinetheme.com/palette/)
+#' @param apply A Boolean - generate and install/apply the .rstheme file (TRUE),
+#' or just save the .rstheme file without applying (FALSE); defaults to FALSE
+#' @param as_sass A Boolean - save theme as .sass file and do not apply (TRUE);
 #' defaults to FALSE
 #' @param ... Additional arguments to pass to [rsthemes::rstheme()] overriding
 #' defaults if necessary
@@ -12,7 +12,7 @@
 #' @export
 rosepine_rstheme <- function(
     variant = NULL,
-    install = TRUE,
+    apply = FALSE,
     as_sass = FALSE,
     ...
 ) {
@@ -111,7 +111,7 @@ rosepine_rstheme <- function(
       )
     )
   } else {
-    if (install) {
+    if (apply) {
       theme_apply <- TRUE
       theme_as_sass <- FALSE
       theme_path = here::here(
@@ -374,6 +374,6 @@ rosepine_rstheme <- function(
   do.call(rsthemes::rstheme, theme_args)
 }
 
-# rosepine_rstheme(install = FALSE)
-# rosepine_rstheme(variant = "moon", install = FALSE)
-# rosepine_rstheme(variant = "dawn", install = FALSE)
+# rosepine_rstheme(apply = FALSE)
+# rosepine_rstheme(variant = "moon", apply = FALSE)
+# rosepine_rstheme(variant = "dawn", apply = FALSE)

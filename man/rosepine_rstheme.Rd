@@ -4,14 +4,14 @@
 \alias{rosepine_rstheme}
 \title{Create Rosé Pine .rstheme file}
 \usage{
-rosepine_rstheme(variant = NULL, install = TRUE, as_sass = FALSE, ...)
+rosepine_rstheme(variant = NULL, apply = TRUE, as_sass = FALSE, ...)
 }
 \arguments{
-\item{variant}{A string - A string defining the theme palette variant to use
-\href{https://rosepinetheme.com/palette/}{Rosé Pine Variants}}
+\item{variant}{A string - A string defining the theme palette variant to use;
+see \href{https://rosepinetheme.com/palette/}{Rosé Pine Variants}}
 
-\item{install}{A Boolean - generate and install/apply the .rstheme file
-(TRUE), or just save the .rstheme file without installing/applying (FALSE)}
+\item{apply}{A Boolean - generate and install/apply the .rstheme file (TRUE),
+or just save the .rstheme file without applying (FALSE)}
 
 \item{as_sass}{A Boolean - save theme as .sass file and do not apply (TRUE),
 defaults to FALSE}
