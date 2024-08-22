@@ -74,7 +74,7 @@ rosepine_rstheme <- function(
     pal_functions = rp_pal$rose,
     pal_conditionals = rp_pal$pine,
     pal_keywords = rp_pal$pine,
-    pal_keys = rp_pal$foam,
+    pal_namespaces = rp_pal$foam,
     pal_tags = rp_pal$foam,
     pal_types = rp_pal$foam,
     pal_methods = rp_pal$iris,
@@ -196,7 +196,7 @@ rosepine_rstheme <- function(
     ##  CODE                                                >>
     ##>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     code_string               = "$pal_strings",
-    code_namespace            = "$pal_keys",
+    code_namespace            = "$pal_namespaces",
     code_namespace_font_style = "italic",
     code_function             = "$pal_functions",
     code_value                = "$pal_values",
