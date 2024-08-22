@@ -77,5 +77,5 @@ RStudio:
 
 ``` mermaid
 flowchart LR
-  A["Global Options/"]-->B["Appearance/"]-->C("Add...")
+  A["Tools/"]-->B["Global Options/"]-->C["Appearance/"]-->D("Add...")
 ```

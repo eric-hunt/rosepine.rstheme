@@ -4,6 +4,11 @@
 #' the [Rosé Pine palette page](https://rosepinetheme.com/palette/)
 #' in August 2024.
 #' @source https://rosepinetheme.com/
+#' @name rosepine_palette
+#'
+NULL
+
+#' @rdname rosepine_palette
 #'
 rose_pine <- list(
   base = "#191724", # main panels, frames, sidebars, tabs
@@ -23,6 +28,8 @@ rose_pine <- list(
   highlight_high = "#524f67" # borders/dividers, cursor background
 )
 
+#' @rdname rosepine_palette
+#'
 rose_pine_moon <- list(
   base = "#232136",
   surface = "#2a273f",
@@ -41,6 +48,8 @@ rose_pine_moon <- list(
   highlight_high = "#56526e"
 )
 
+#' @rdname rosepine_palette
+#'
 rose_pine_dawn <- list(
   base = "#faf4ed",
   surface = "#fffaf3",
