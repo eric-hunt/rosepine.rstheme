@@ -48,6 +48,15 @@ rosepine_rstheme <- function(
       "%)"
     )
   }
+  .transparentize <- function(nm, by = 0.25) {
+    paste0(
+      "transparentize($",
+      nm,
+      ", ",
+      by,
+      ")"
+    )
+  }
 
   theme_palette <- list(
     # UI
@@ -60,25 +69,6 @@ rosepine_rstheme <- function(
     fg = rp_pal$text,
     fg_2 = rp_pal$subtle,
     fg_3 = rp_pal$muted,
-    # Code
-    pal_comments = rp_pal$muted,
-    pal_messages = rp_pal$love,
-    pal_errors = rp_pal$love,
-    pal_operators = rp_pal$subtle,
-    pal_punctuation = rp_pal$subtle,
-    pal_variables = rp_pal$text,
-    pal_builtins = rp_pal$love,
-    pal_strings = rp_pal$gold,
-    pal_values = rp_pal$pine,
-    pal_booleans = rp_pal$rose,
-    pal_functions = rp_pal$rose,
-    pal_conditionals = rp_pal$pine,
-    pal_keywords = rp_pal$pine,
-    pal_namespaces = rp_pal$foam,
-    pal_tags = rp_pal$foam,
-    pal_types = rp_pal$foam,
-    pal_methods = rp_pal$iris,
-    pal_parameters = rp_pal$iris,
     # Terminal colors
     red = rp_pal$love,
     green = rp_pal$pine,
@@ -98,7 +88,29 @@ rosepine_rstheme <- function(
     light_yellow = .lighten("yellow"),
     light_blue = .lighten("blue"),
     light_purple = .lighten("purple"),
-    light_cyan = .lighten("cyan")
+    light_cyan = .lighten("cyan"),
+    # Other
+    pal_cursor_line = .lighten("hl_1", 3),
+    pal_selection = .transparentize("red", 0.75),
+    # Code
+    pal_comments = "$fg_3",
+    pal_messages = "$red",
+    pal_errors = "$red",
+    pal_operators = "$fg_2",
+    pal_punctuation = "$fg_2",
+    pal_variables = "$fg",
+    pal_builtins = "$red",
+    pal_strings = "$yellow",
+    pal_values = "$green",
+    pal_booleans = "$cyan",
+    pal_functions = "$cyan",
+    pal_conditionals = "$green",
+    pal_keywords = "$green",
+    pal_namespaces = "$blue",
+    pal_tags = "$blue",
+    pal_types = "$blue",
+    pal_methods = "$purple",
+    pal_parameters = "$purple"
   )
 
   if (as_sass) {
@@ -170,13 +182,13 @@ rosepine_rstheme <- function(
     ##  Interactions                        --
     ##----------------------------------------
     ui_cursor             = "transparentize($cyan, 0.25)",
-    ui_selection          = "transparentize($red, 0.75)",
+    ui_selection          = "$pal_selection",
     ui_console_selection  = "$ui_selection",
     #
     ##----------------------------------------
     ##  Guides                              --
     ##----------------------------------------
-    ui_line_active                      = .lighten("hl_1", 3),
+    ui_line_active                      = "$pal_cursor_line",
     ui_line_active_selection            = "$ui_selection",
     ui_bracket                          = "transparentize($hl_3, 0.1)",
     ui_invisible                        = "$hl_2",
@@ -231,13 +243,13 @@ rosepine_rstheme <- function(
     ##  Rainbow parentheses                  --
     ##-----------------------------------------
     rsthemes::rstheme_rainbow_parentheses(
-      "$fg_3",
-      "$purple",
-      "$green",
-      "$red",
-      "$yellow",
-      "$blue",
-      "$fg"
+      "$fg_2",
+      "$light_red",
+      "$light_green",
+      "$light_yellow",
+      "$light_blue",
+      "$light_purple",
+      "$light_cyan"
     ),
     #
     ##----------------------------------------
@@ -364,9 +376,18 @@ rosepine_rstheme <- function(
     .ace_comment {
       font-style: italic;
     }
+    .ace_constant {
+      color: $pal_booleans
+    }
+    .ace_constant.ace_language {
+      color: $pal_booleans
+    }
+    .ace_constant.ace_numeric {
+      font-color: $pal_values
+    }
     .ace_bracket {
-      margin: -1px 0 0 0 !important;
-      padding: 0px;
+      margin: -1px 0 0 -1px !important;
+      padding: 1px;
       border: 0 !important;
       border-radius: 1;
     }

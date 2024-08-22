@@ -642,9 +642,21 @@ table.rstheme_tabLayoutCenter .gwt-Label,
   font-style: italic;
 }
 
+.ace_constant {
+  color: #d7827e;
+}
+
+.ace_constant.ace_language {
+  color: #d7827e;
+}
+
+.ace_constant.ace_numeric {
+  font-color: #286983;
+}
+
 .ace_bracket {
-  margin: -1px 0 0 0 !important;
-  padding: 0px;
+  margin: -1px 0 0 -1px !important;
+  padding: 1px;
   border: 0 !important;
   border-radius: 1;
 }
@@ -2816,31 +2828,31 @@ input#rstudio_command_palette_search {
 
 /* Rainbow Parenthesis */
 .ace_paren_color_0 {
-  color: #9893a5;
+  color: #797593;
 }
 
 .ace_paren_color_1 {
-  color: #907aa9;
+  color: #bc7489;
 }
 
 .ace_paren_color_2 {
-  color: #286983;
+  color: #2e7997;
 }
 
 .ace_paren_color_3 {
-  color: #b4637a;
+  color: #eca84b;
 }
 
 .ace_paren_color_4 {
-  color: #ea9d34;
+  color: #64a0ab;
 }
 
 .ace_paren_color_5 {
-  color: #56949f;
+  color: #9d89b3;
 }
 
 .ace_paren_color_6 {
-  color: #575279;
+  color: #dd9591;
 }
 
 .rstudio-themes-flat > :not(.gwt-DialogBox-ModalDialog) .gwt-TabLayoutPanel > div[aria-hidden="true"] + div {
