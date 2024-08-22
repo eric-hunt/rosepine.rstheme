@@ -67,9 +67,9 @@ GitHub with:
 ``` r
 if (!require(rsthemes)) remotes::install_github("gadenbuie/rsthemes")
 remotes::install_github("eric-hunt/rosepine.rstheme")
-rosepine.rstheme::rosepine_rstheme(apply = TRUE) # harder dark
-rosepine.rstheme::rosepine_rstheme(style = "Moon", apply = TRUE) # softer dark
-rosepine.rstheme::rosepine_rstheme(style = "Dawn", apply = TRUE) # light
+rosepine.rstheme::rosepine_rstheme(style = "base", apply = TRUE) # harder dark
+rosepine.rstheme::rosepine_rstheme(style = "moon", apply = TRUE) # softer dark
+rosepine.rstheme::rosepine_rstheme(style = "dawn", apply = TRUE) # light
 ```
 
 Or, you can just download the .rstheme file(s) and import within

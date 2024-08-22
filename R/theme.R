@@ -1,6 +1,7 @@
 #' Create Rosé Pine .rstheme file
 #'
 #' @param variant A string - A string defining the theme palette variant to use;
+#' must be "base", "moon", or "dawn";
 #' see [Rosé Pine Variants](https://rosepinetheme.com/palette/)
 #' @param apply A Boolean - generate and install/apply the .rstheme file (TRUE),
 #' or just save the .rstheme file without applying (FALSE); defaults to FALSE
@@ -11,14 +12,15 @@
 #'
 #' @export
 rosepine_rstheme <- function(
-    variant = NULL,
+    variant = "base",
     apply = FALSE,
     as_sass = FALSE,
     ...
 ) {
-  variant.choices <- c("Dawn", "Moon")
-  if (!is.null(variant)) variant <- tools::toTitleCase(variant)
-  stopifnot(is.null(variant) | variant %in% variant.choices)
+  variant.choices <- list("base" = NULL, "moon" = "Moon", "dawn" = "Dawn")
+  stopifnot("Variant must be 'base', 'moon', or 'dawn'." =
+              tolower(variant) %in% names(variant.choices))
+  variant <- do.call(switch, c(tolower(variant), variant.choices))
 
   rp_pal <- get(paste0(
     "rose_pine",
@@ -374,6 +376,9 @@ rosepine_rstheme <- function(
   do.call(rsthemes::rstheme, theme_args)
 }
 
-# rosepine_rstheme(apply = FALSE)
-# rosepine_rstheme(variant = "moon", apply = FALSE)
-# rosepine_rstheme(variant = "dawn", apply = FALSE)
+purrr::walk(
+  c("base", "moon", "dawn"),
+  function(variant) {
+    rosepine_rstheme(variant = variant)
+  }
+)

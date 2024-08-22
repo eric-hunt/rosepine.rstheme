@@ -137,7 +137,7 @@
 }
 
 .ace_constant.ace_language {
-  color: #d7827e;
+  color: #b4637a;
   background-color: inherit;
 }
 
@@ -376,7 +376,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 
 .rstudio-themes-flat #rstudio_workbench_panel_find_in_files td[colspan="2"] {
   /* file name in Find in Files */
-  color: #d7827e;
+  color: #b4637a;
 }
 
 /* pane toolbars */
@@ -2975,6 +2975,14 @@ input#rstudio_command_palette_search {
 
 .rstudio-themes-flat .gwt-DialogBox .dialogContent [id^="rstudio_label"][aria-selected="true"] td .gwt-Label {
   color: #575279 !important;
+}
+
+.rstudio-themes-flat .gwt-DialogBox[aria-label="Update Packages"] table[role="presentation"] tbody {
+  color: #b48153;
+}
+
+.rstudio-themes-flat .gwt-DialogBox table[role="presentation"] .gwt-Label {
+  color: #56949f;
 }
 
 .rstudio-themes-flat .dialogContent button {
