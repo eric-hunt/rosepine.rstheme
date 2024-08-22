@@ -22,6 +22,8 @@ rosepine_rstheme <- function(
               tolower(variant) %in% names(variant.choices))
   variant <- do.call(switch, c(tolower(variant), variant.choices))
 
+  theme_dark <- !identical(variant, "Dawn")
+
   rp_pal <- get(paste0(
     "rose_pine",
     if (!is.null(variant)) "_",
@@ -76,6 +78,14 @@ rosepine_rstheme <- function(
     blue = rp_pal$foam,
     purple = rp_pal$iris,
     cyan = rp_pal$rose,
+    white = .lighten(
+      if (theme_dark) "fg" else "bg_3",
+      if (theme_dark) 5 else 10
+    ),
+    black = .darken(
+      if (theme_dark) "bg_3" else "fg",
+      if (theme_dark) 5 else 10
+    ),
     # Color variants
     dark_red = .darken("red"),
     dark_green = .darken("green"),
@@ -155,7 +165,7 @@ rosepine_rstheme <- function(
     ##  THEME META                                          >>
     ##>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     theme_name    = paste0("Rosé Pine", if (!is.null(variant)) " ", variant),
-    theme_dark    = !identical(variant, "Dawn"),
+    theme_dark    = theme_dark,
     theme_flat    = TRUE,
     theme_palette = theme_palette,
     theme_as_sass = theme_as_sass,
@@ -282,7 +292,7 @@ rosepine_rstheme <- function(
     ##  Terminal colors                      --
     ##-----------------------------------------
     rsthemes::rstheme_terminal_colors(
-      theme_dark = TRUE,
+      theme_dark = theme_dark,
       red = "$red",
       red_bright = "$light_red",
       green = "$green",
@@ -295,10 +305,8 @@ rosepine_rstheme <- function(
       cyan_bright = "$light_cyan",
       magenta = "$purple",
       magenta_bright = "$light_purple",
-      white = "$fg",
-      # white_bright = "$fg",
-      black = "$bg_3",
-      # black_bright = "$bg_3"
+      white = "$white",
+      black = "$black"
     ),
     #
     ##-----------------------------------------
