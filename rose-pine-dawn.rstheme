@@ -132,7 +132,7 @@
 
 .ace_keyword.ace_other.ace_unit {
   font-style: normal;
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
@@ -142,12 +142,12 @@
 }
 
 .ace_constant.ace_numeric {
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
 .ace_constant.ace_character {
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .ace_line > .ace_constant.ace_language {
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
@@ -166,7 +166,7 @@
 }
 
 .ace_identifier.ace_support.ace_constant {
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
@@ -222,7 +222,7 @@
 }
 
 .ace_variable.ace_parameter {
-  color: #286983;
+  color: #907aa9;
   background-color: inherit;
 }
 
@@ -339,7 +339,7 @@ table.rstheme_tabLayoutCenter,
 table.rstheme_tabLayoutCenter .gwt-Label,
 .rstudio-themes-flat .rstudio-themes-default .gwt-TabLayoutPanelTabs .gwt-Label,
 .rstheme_multiPodUtilityTabArea .gwt-Label {
-  color: #9893a5;
+  color: #797593;
 }
 
 /* toolbar and selected tab */
@@ -483,7 +483,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 .rstudio-themes-flat, .rstudio-themes-flat .rstudio-themes-scrollbars {
   /* Works on Firefox */
   scrollbar-width: auto;
-  scrollbar-color: #fffaf3 rgba(250, 244, 237, 0.5);
+  scrollbar-color: #dfdad9 #fffaf3;
   /* Works on Chrome, Edge, and Safari */
 }
 
@@ -492,17 +492,17 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-track, .rstudio-themes-flat .rstudio-themes-scrollbars *::-webkit-scrollbar-track {
-  background: rgba(250, 244, 237, 0.5);
+  background: #fffaf3;
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-thumb, .rstudio-themes-flat .rstudio-themes-scrollbars *::-webkit-scrollbar-thumb {
-  background-color: #fffaf3;
+  background-color: #dfdad9;
   border-radius: 0px;
   border: 2px solid #faf4ed;
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-thumb:hover, .rstudio-themes-flat .rstudio-themes-scrollbars *::-webkit-scrollbar-thumb:hover {
-  background-color: #ffefda;
+  background-color: #d3cdcb;
 }
 
 /* fix overly zealous css rules */
@@ -651,7 +651,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .ace_constant.ace_numeric {
-  font-color: #286983;
+  font-color: #907aa9;
 }
 
 .ace_bracket {
@@ -735,11 +735,11 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor0 {
-  color: #504a4e !important;
+  color: #413d5b !important;
 }
 
 .xtermBgColor0 {
-  background-color: #504a4e;
+  background-color: #413d5b;
 }
 
 .xtermColor1 {
@@ -791,19 +791,19 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor7 {
-  color: #615e77 !important;
+  color: white !important;
 }
 
 .xtermBgColor7 {
-  background-color: #615e77;
+  background-color: white;
 }
 
 .xtermColor8 {
-  color: #5a5667 !important;
+  color: #b3b2bd !important;
 }
 
 .xtermBgColor8 {
-  background-color: #5a5667;
+  background-color: #b3b2bd;
 }
 
 .xtermColor9 {
@@ -855,11 +855,11 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor15 {
-  color: #797593 !important;
+  color: white !important;
 }
 
 .xtermBgColor15 {
-  background-color: #797593;
+  background-color: white;
 }
 
 .xtermColor16 {

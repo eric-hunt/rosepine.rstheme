@@ -118,7 +118,7 @@
 
 .ace_keyword.ace_other.ace_unit {
   font-style: normal;
-  color: #3e8fb0;
+  color: #c4a7e7;
 }
 
 .ace_constant.ace_language {
@@ -126,11 +126,11 @@
 }
 
 .ace_constant.ace_numeric {
-  color: #3e8fb0;
+  color: #c4a7e7;
 }
 
 .ace_constant.ace_character {
-  color: #3e8fb0;
+  color: #c4a7e7;
 }
 
 .ace_constant.ace_other {
@@ -142,7 +142,7 @@
 }
 
 .ace_support.ace_constant {
-  color: #3e8fb0;
+  color: #c4a7e7;
 }
 
 .ace_support.ace_class {
@@ -191,7 +191,7 @@
 }
 
 .ace_variable.ace_parameter {
-  color: #3e8fb0;
+  color: #c4a7e7;
 }
 
 .ace_identifier {
@@ -300,7 +300,7 @@ table.rstheme_tabLayoutCenter,
 table.rstheme_tabLayoutCenter .gwt-Label,
 .rstudio-themes-flat .rstudio-themes-dark-grey .gwt-TabLayoutPanelTabs .gwt-Label,
 .rstheme_multiPodUtilityTabArea .gwt-Label {
-  color: #6e6a86;
+  color: #908caa;
 }
 
 /* toolbar and selected tab */
@@ -453,7 +453,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 .rstudio-themes-flat, .rstudio-themes-flat .rstudio-themes-dark.rstudio-themes-scrollbars {
   /* Works on Firefox */
   scrollbar-width: auto;
-  scrollbar-color: #2a273f rgba(35, 33, 54, 0.5);
+  scrollbar-color: #44415a #2a273f;
   /* Works on Chrome, Edge, and Safari */
 }
 
@@ -462,17 +462,17 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-track, .rstudio-themes-flat .rstudio-themes-dark.rstudio-themes-scrollbars *::-webkit-scrollbar-track {
-  background: rgba(35, 33, 54, 0.5);
+  background: #2a273f;
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-thumb, .rstudio-themes-flat .rstudio-themes-dark.rstudio-themes-scrollbars *::-webkit-scrollbar-thumb {
-  background-color: #2a273f;
+  background-color: #44415a;
   border-radius: 0px;
   border: 2px solid #232136;
 }
 
 .rstudio-themes-flat *::-webkit-scrollbar-thumb:hover, .rstudio-themes-flat .rstudio-themes-dark.rstudio-themes-scrollbars *::-webkit-scrollbar-thumb:hover {
-  background-color: #35314f;
+  background-color: #4f4c69;
 }
 
 /* fix overly zealous css rules */
@@ -622,7 +622,7 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .ace_constant.ace_numeric {
-  font-color: #3e8fb0;
+  font-color: #c4a7e7;
 }
 
 .ace_bracket {
@@ -706,11 +706,11 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor0 {
-  color: #1d1c25 !important;
+  color: #2e2b43 !important;
 }
 
 .xtermBgColor0 {
-  background-color: #1d1c25;
+  background-color: #2e2b43;
 }
 
 .xtermColor1 {
@@ -762,19 +762,19 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor7 {
-  color: #827d9f !important;
+  color: #f2f1fa !important;
 }
 
 .xtermBgColor7 {
-  background-color: #827d9f;
+  background-color: #f2f1fa;
 }
 
 .xtermColor8 {
-  color: #59566e !important;
+  color: #a4a2b1 !important;
 }
 
 .xtermBgColor8 {
-  background-color: #59566e;
+  background-color: #a4a2b1;
 }
 
 .xtermColor9 {
@@ -826,11 +826,11 @@ table.rstheme_tabLayoutCenter .gwt-Label,
 }
 
 .xtermColor15 {
-  color: #9e9bb5 !important;
+  color: white !important;
 }
 
 .xtermBgColor15 {
-  background-color: #9e9bb5;
+  background-color: white;
 }
 
 .xtermColor16 {
