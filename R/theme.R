@@ -184,9 +184,11 @@ rosepine_rstheme <- function(
     ui_rstudio_foreground                     = "$fg",
     ui_rstudio_tabs_inactive_background       = "$bg",
     ui_rstudio_tabs_inactive_hover_background = .lighten("bg", 2),
-    ui_rstudio_tabs_inactive_foreground       = "$fg_3",
+    ui_rstudio_tabs_inactive_foreground       = "$fg_2",
     ui_rstudio_tabs_active_background         = "$bg_3",
     ui_rstudio_tabs_active_foreground         = "$fg",
+    ui_rstudio_scrollbar_background           = "$bg_2",
+    ui_rstudio_scrollbar_handle               = "$hl_2",
     #
     ##----------------------------------------
     ##  Interactions                        --
